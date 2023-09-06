@@ -1,0 +1,958 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B1C759A62AA1BCE500A7B8DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C759A52AA1BCE500A7B8DB /* AppDelegate.swift */; };
+		B1C759A82AA1BCE500A7B8DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C759A72AA1BCE500A7B8DB /* SceneDelegate.swift */; };
+		B1C759AB2AA1BCE500A7B8DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C759A92AA1BCE500A7B8DB /* LaunchScreen.storyboard */; };
+		B1C759AE2AA1BCE500A7B8DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C759AC2AA1BCE500A7B8DB /* Main.storyboard */; };
+		B1C759B72AA1BCE500A7B8DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C759B62AA1BCE500A7B8DB /* AppDelegate.swift */; };
+		B1C759BA2AA1BCE500A7B8DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B1C759B82AA1BCE500A7B8DB /* Main.storyboard */; };
+		B1C759C12AA1BCE500A7B8DB /* Email Hunter Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B1C759C02AA1BCE500A7B8DB /* Email Hunter Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B1C759CB2AA1BCE500A7B8DB /* Email Hunter Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = B1C759CA2AA1BCE500A7B8DB /* Email Hunter Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B1C759D12AA1BCE500A7B8DB /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = B1C7598C2AA1BCE300A7B8DB /* Main.html */; };
+		B1C759D22AA1BCE500A7B8DB /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = B1C7598C2AA1BCE300A7B8DB /* Main.html */; };
+		B1C759D32AA1BCE500A7B8DB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C7598E2AA1BCE300A7B8DB /* Icon.png */; };
+		B1C759D42AA1BCE500A7B8DB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1C7598E2AA1BCE300A7B8DB /* Icon.png */; };
+		B1C759D52AA1BCE500A7B8DB /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = B1C7598F2AA1BCE300A7B8DB /* Style.css */; };
+		B1C759D62AA1BCE500A7B8DB /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = B1C7598F2AA1BCE300A7B8DB /* Style.css */; };
+		B1C759D72AA1BCE500A7B8DB /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = B1C759902AA1BCE300A7B8DB /* Script.js */; };
+		B1C759D82AA1BCE500A7B8DB /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = B1C759902AA1BCE300A7B8DB /* Script.js */; };
+		B1C759D92AA1BCE500A7B8DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C759912AA1BCE300A7B8DB /* ViewController.swift */; };
+		B1C759DA2AA1BCE500A7B8DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C759912AA1BCE300A7B8DB /* ViewController.swift */; };
+		B1C759DB2AA1BCE500A7B8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C759922AA1BCE500A7B8DB /* Assets.xcassets */; };
+		B1C759DC2AA1BCE500A7B8DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C759922AA1BCE500A7B8DB /* Assets.xcassets */; };
+		B1C759DD2AA1BCE500A7B8DB /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C759942AA1BCE500A7B8DB /* SafariWebExtensionHandler.swift */; };
+		B1C759DE2AA1BCE500A7B8DB /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C759942AA1BCE500A7B8DB /* SafariWebExtensionHandler.swift */; };
+		B1C759DF2AA1BCE500A7B8DB /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = B1C759962AA1BCE500A7B8DB /* _locales */; };
+		B1C759E02AA1BCE500A7B8DB /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = B1C759962AA1BCE500A7B8DB /* _locales */; };
+		B1C759E12AA1BCE500A7B8DB /* images in Resources */ = {isa = PBXBuildFile; fileRef = B1C759972AA1BCE500A7B8DB /* images */; };
+		B1C759E22AA1BCE500A7B8DB /* images in Resources */ = {isa = PBXBuildFile; fileRef = B1C759972AA1BCE500A7B8DB /* images */; };
+		B1C759E32AA1BCE500A7B8DB /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B1C759982AA1BCE500A7B8DB /* manifest.json */; };
+		B1C759E42AA1BCE500A7B8DB /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = B1C759982AA1BCE500A7B8DB /* manifest.json */; };
+		B1C759E52AA1BCE500A7B8DB /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = B1C759992AA1BCE500A7B8DB /* background.js */; };
+		B1C759E62AA1BCE500A7B8DB /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = B1C759992AA1BCE500A7B8DB /* background.js */; };
+		B1C759E72AA1BCE500A7B8DB /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = B1C7599A2AA1BCE500A7B8DB /* content.js */; };
+		B1C759E82AA1BCE500A7B8DB /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = B1C7599A2AA1BCE500A7B8DB /* content.js */; };
+		B1C759E92AA1BCE500A7B8DB /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = B1C7599B2AA1BCE500A7B8DB /* popup.html */; };
+		B1C759EA2AA1BCE500A7B8DB /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = B1C7599B2AA1BCE500A7B8DB /* popup.html */; };
+		B1C759EB2AA1BCE500A7B8DB /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = B1C7599C2AA1BCE500A7B8DB /* popup.css */; };
+		B1C759EC2AA1BCE500A7B8DB /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = B1C7599C2AA1BCE500A7B8DB /* popup.css */; };
+		B1C759ED2AA1BCE500A7B8DB /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = B1C7599D2AA1BCE500A7B8DB /* popup.js */; };
+		B1C759EE2AA1BCE500A7B8DB /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = B1C7599D2AA1BCE500A7B8DB /* popup.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B1C759C22AA1BCE500A7B8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1C759862AA1BCE200A7B8DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1C759BF2AA1BCE500A7B8DB;
+			remoteInfo = "Email Hunter Extension (iOS)";
+		};
+		B1C759CC2AA1BCE500A7B8DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B1C759862AA1BCE200A7B8DB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B1C759C92AA1BCE500A7B8DB;
+			remoteInfo = "Email Hunter Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B1C759F42AA1BCE500A7B8DB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B1C759C12AA1BCE500A7B8DB /* Email Hunter Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C759FB2AA1BCE500A7B8DB /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B1C759CB2AA1BCE500A7B8DB /* Email Hunter Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B1C7598D2AA1BCE300A7B8DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
+		B1C7598E2AA1BCE300A7B8DB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		B1C7598F2AA1BCE300A7B8DB /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		B1C759902AA1BCE300A7B8DB /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		B1C759912AA1BCE300A7B8DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B1C759922AA1BCE500A7B8DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B1C759942AA1BCE500A7B8DB /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		B1C759962AA1BCE500A7B8DB /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
+		B1C759972AA1BCE500A7B8DB /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
+		B1C759982AA1BCE500A7B8DB /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
+		B1C759992AA1BCE500A7B8DB /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
+		B1C7599A2AA1BCE500A7B8DB /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
+		B1C7599B2AA1BCE500A7B8DB /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
+		B1C7599C2AA1BCE500A7B8DB /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
+		B1C7599D2AA1BCE500A7B8DB /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		B1C759A22AA1BCE500A7B8DB /* Email Hunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Email Hunter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C759A52AA1BCE500A7B8DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1C759A72AA1BCE500A7B8DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B1C759AA2AA1BCE500A7B8DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B1C759AD2AA1BCE500A7B8DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1C759AF2AA1BCE500A7B8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1C759B42AA1BCE500A7B8DB /* Email Hunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Email Hunter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C759B62AA1BCE500A7B8DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B1C759B92AA1BCE500A7B8DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B1C759BB2AA1BCE500A7B8DB /* Email Hunter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Email Hunter.entitlements"; sourceTree = "<group>"; };
+		B1C759C02AA1BCE500A7B8DB /* Email Hunter Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Email Hunter Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C759C52AA1BCE500A7B8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1C759CA2AA1BCE500A7B8DB /* Email Hunter Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Email Hunter Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B1C759CF2AA1BCE500A7B8DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1C759D02AA1BCE500A7B8DB /* Email Hunter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Email Hunter.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B1C7599F2AA1BCE500A7B8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C759B12AA1BCE500A7B8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C759BD2AA1BCE500A7B8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C759C72AA1BCE500A7B8DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B1C759852AA1BCE200A7B8DB = {
+			isa = PBXGroup;
+			children = (
+				B1C7598A2AA1BCE300A7B8DB /* Shared (App) */,
+				B1C759932AA1BCE500A7B8DB /* Shared (Extension) */,
+				B1C759A42AA1BCE500A7B8DB /* iOS (App) */,
+				B1C759B52AA1BCE500A7B8DB /* macOS (App) */,
+				B1C759C42AA1BCE500A7B8DB /* iOS (Extension) */,
+				B1C759CE2AA1BCE500A7B8DB /* macOS (Extension) */,
+				B1C759A32AA1BCE500A7B8DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B1C7598A2AA1BCE300A7B8DB /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				B1C759912AA1BCE300A7B8DB /* ViewController.swift */,
+				B1C759922AA1BCE500A7B8DB /* Assets.xcassets */,
+				B1C7598B2AA1BCE300A7B8DB /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		B1C7598B2AA1BCE300A7B8DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1C7598C2AA1BCE300A7B8DB /* Main.html */,
+				B1C7598E2AA1BCE300A7B8DB /* Icon.png */,
+				B1C7598F2AA1BCE300A7B8DB /* Style.css */,
+				B1C759902AA1BCE300A7B8DB /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B1C759932AA1BCE500A7B8DB /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				B1C759942AA1BCE500A7B8DB /* SafariWebExtensionHandler.swift */,
+				B1C759952AA1BCE500A7B8DB /* Resources */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		B1C759952AA1BCE500A7B8DB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B1C759962AA1BCE500A7B8DB /* _locales */,
+				B1C759972AA1BCE500A7B8DB /* images */,
+				B1C759982AA1BCE500A7B8DB /* manifest.json */,
+				B1C759992AA1BCE500A7B8DB /* background.js */,
+				B1C7599A2AA1BCE500A7B8DB /* content.js */,
+				B1C7599B2AA1BCE500A7B8DB /* popup.html */,
+				B1C7599C2AA1BCE500A7B8DB /* popup.css */,
+				B1C7599D2AA1BCE500A7B8DB /* popup.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B1C759A32AA1BCE500A7B8DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B1C759A22AA1BCE500A7B8DB /* Email Hunter.app */,
+				B1C759B42AA1BCE500A7B8DB /* Email Hunter.app */,
+				B1C759C02AA1BCE500A7B8DB /* Email Hunter Extension.appex */,
+				B1C759CA2AA1BCE500A7B8DB /* Email Hunter Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B1C759A42AA1BCE500A7B8DB /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				B1C759A52AA1BCE500A7B8DB /* AppDelegate.swift */,
+				B1C759A72AA1BCE500A7B8DB /* SceneDelegate.swift */,
+				B1C759A92AA1BCE500A7B8DB /* LaunchScreen.storyboard */,
+				B1C759AC2AA1BCE500A7B8DB /* Main.storyboard */,
+				B1C759AF2AA1BCE500A7B8DB /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		B1C759B52AA1BCE500A7B8DB /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				B1C759B62AA1BCE500A7B8DB /* AppDelegate.swift */,
+				B1C759B82AA1BCE500A7B8DB /* Main.storyboard */,
+				B1C759BB2AA1BCE500A7B8DB /* Email Hunter.entitlements */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		B1C759C42AA1BCE500A7B8DB /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				B1C759C52AA1BCE500A7B8DB /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		B1C759CE2AA1BCE500A7B8DB /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				B1C759CF2AA1BCE500A7B8DB /* Info.plist */,
+				B1C759D02AA1BCE500A7B8DB /* Email Hunter.entitlements */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B1C759A12AA1BCE500A7B8DB /* Email Hunter (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C759F52AA1BCE500A7B8DB /* Build configuration list for PBXNativeTarget "Email Hunter (iOS)" */;
+			buildPhases = (
+				B1C7599E2AA1BCE500A7B8DB /* Sources */,
+				B1C7599F2AA1BCE500A7B8DB /* Frameworks */,
+				B1C759A02AA1BCE500A7B8DB /* Resources */,
+				B1C759F42AA1BCE500A7B8DB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1C759C32AA1BCE500A7B8DB /* PBXTargetDependency */,
+			);
+			name = "Email Hunter (iOS)";
+			productName = "Email Hunter (iOS)";
+			productReference = B1C759A22AA1BCE500A7B8DB /* Email Hunter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1C759B32AA1BCE500A7B8DB /* Email Hunter (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C759FC2AA1BCE500A7B8DB /* Build configuration list for PBXNativeTarget "Email Hunter (macOS)" */;
+			buildPhases = (
+				B1C759B02AA1BCE500A7B8DB /* Sources */,
+				B1C759B12AA1BCE500A7B8DB /* Frameworks */,
+				B1C759B22AA1BCE500A7B8DB /* Resources */,
+				B1C759FB2AA1BCE500A7B8DB /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B1C759CD2AA1BCE500A7B8DB /* PBXTargetDependency */,
+			);
+			name = "Email Hunter (macOS)";
+			productName = "Email Hunter (macOS)";
+			productReference = B1C759B42AA1BCE500A7B8DB /* Email Hunter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B1C759BF2AA1BCE500A7B8DB /* Email Hunter Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C759F12AA1BCE500A7B8DB /* Build configuration list for PBXNativeTarget "Email Hunter Extension (iOS)" */;
+			buildPhases = (
+				B1C759BC2AA1BCE500A7B8DB /* Sources */,
+				B1C759BD2AA1BCE500A7B8DB /* Frameworks */,
+				B1C759BE2AA1BCE500A7B8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Email Hunter Extension (iOS)";
+			productName = "Email Hunter Extension (iOS)";
+			productReference = B1C759C02AA1BCE500A7B8DB /* Email Hunter Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		B1C759C92AA1BCE500A7B8DB /* Email Hunter Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B1C759F82AA1BCE500A7B8DB /* Build configuration list for PBXNativeTarget "Email Hunter Extension (macOS)" */;
+			buildPhases = (
+				B1C759C62AA1BCE500A7B8DB /* Sources */,
+				B1C759C72AA1BCE500A7B8DB /* Frameworks */,
+				B1C759C82AA1BCE500A7B8DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Email Hunter Extension (macOS)";
+			productName = "Email Hunter Extension (macOS)";
+			productReference = B1C759CA2AA1BCE500A7B8DB /* Email Hunter Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B1C759862AA1BCE200A7B8DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					B1C759A12AA1BCE500A7B8DB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B1C759B32AA1BCE500A7B8DB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B1C759BF2AA1BCE500A7B8DB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					B1C759C92AA1BCE500A7B8DB = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = B1C759892AA1BCE200A7B8DB /* Build configuration list for PBXProject "Email Hunter" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B1C759852AA1BCE200A7B8DB;
+			productRefGroup = B1C759A32AA1BCE500A7B8DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B1C759A12AA1BCE500A7B8DB /* Email Hunter (iOS) */,
+				B1C759B32AA1BCE500A7B8DB /* Email Hunter (macOS) */,
+				B1C759BF2AA1BCE500A7B8DB /* Email Hunter Extension (iOS) */,
+				B1C759C92AA1BCE500A7B8DB /* Email Hunter Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B1C759A02AA1BCE500A7B8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C759D32AA1BCE500A7B8DB /* Icon.png in Resources */,
+				B1C759AB2AA1BCE500A7B8DB /* LaunchScreen.storyboard in Resources */,
+				B1C759D12AA1BCE500A7B8DB /* Main.html in Resources */,
+				B1C759D72AA1BCE500A7B8DB /* Script.js in Resources */,
+				B1C759DB2AA1BCE500A7B8DB /* Assets.xcassets in Resources */,
+				B1C759AE2AA1BCE500A7B8DB /* Main.storyboard in Resources */,
+				B1C759D52AA1BCE500A7B8DB /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C759B22AA1BCE500A7B8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C759D42AA1BCE500A7B8DB /* Icon.png in Resources */,
+				B1C759D62AA1BCE500A7B8DB /* Style.css in Resources */,
+				B1C759BA2AA1BCE500A7B8DB /* Main.storyboard in Resources */,
+				B1C759D82AA1BCE500A7B8DB /* Script.js in Resources */,
+				B1C759DC2AA1BCE500A7B8DB /* Assets.xcassets in Resources */,
+				B1C759D22AA1BCE500A7B8DB /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C759BE2AA1BCE500A7B8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C759E52AA1BCE500A7B8DB /* background.js in Resources */,
+				B1C759EB2AA1BCE500A7B8DB /* popup.css in Resources */,
+				B1C759E92AA1BCE500A7B8DB /* popup.html in Resources */,
+				B1C759E12AA1BCE500A7B8DB /* images in Resources */,
+				B1C759E32AA1BCE500A7B8DB /* manifest.json in Resources */,
+				B1C759DF2AA1BCE500A7B8DB /* _locales in Resources */,
+				B1C759E72AA1BCE500A7B8DB /* content.js in Resources */,
+				B1C759ED2AA1BCE500A7B8DB /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C759C82AA1BCE500A7B8DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C759E62AA1BCE500A7B8DB /* background.js in Resources */,
+				B1C759EC2AA1BCE500A7B8DB /* popup.css in Resources */,
+				B1C759EA2AA1BCE500A7B8DB /* popup.html in Resources */,
+				B1C759E22AA1BCE500A7B8DB /* images in Resources */,
+				B1C759E42AA1BCE500A7B8DB /* manifest.json in Resources */,
+				B1C759E02AA1BCE500A7B8DB /* _locales in Resources */,
+				B1C759E82AA1BCE500A7B8DB /* content.js in Resources */,
+				B1C759EE2AA1BCE500A7B8DB /* popup.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B1C7599E2AA1BCE500A7B8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C759D92AA1BCE500A7B8DB /* ViewController.swift in Sources */,
+				B1C759A62AA1BCE500A7B8DB /* AppDelegate.swift in Sources */,
+				B1C759A82AA1BCE500A7B8DB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C759B02AA1BCE500A7B8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C759DA2AA1BCE500A7B8DB /* ViewController.swift in Sources */,
+				B1C759B72AA1BCE500A7B8DB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C759BC2AA1BCE500A7B8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C759DD2AA1BCE500A7B8DB /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C759C62AA1BCE500A7B8DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B1C759DE2AA1BCE500A7B8DB /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B1C759C32AA1BCE500A7B8DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1C759BF2AA1BCE500A7B8DB /* Email Hunter Extension (iOS) */;
+			targetProxy = B1C759C22AA1BCE500A7B8DB /* PBXContainerItemProxy */;
+		};
+		B1C759CD2AA1BCE500A7B8DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B1C759C92AA1BCE500A7B8DB /* Email Hunter Extension (macOS) */;
+			targetProxy = B1C759CC2AA1BCE500A7B8DB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B1C7598C2AA1BCE300A7B8DB /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1C7598D2AA1BCE300A7B8DB /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		B1C759A92AA1BCE500A7B8DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1C759AA2AA1BCE500A7B8DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B1C759AC2AA1BCE500A7B8DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1C759AD2AA1BCE500A7B8DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B1C759B82AA1BCE500A7B8DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B1C759B92AA1BCE500A7B8DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B1C759EF2AA1BCE500A7B8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B1C759F02AA1BCE500A7B8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		B1C759F22AA1BCE500A7B8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Email Hunter Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chicmic.Email-Hunter.Extension";
+				PRODUCT_NAME = "Email Hunter Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1C759F32AA1BCE500A7B8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Email Hunter Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chicmic.Email-Hunter.Extension";
+				PRODUCT_NAME = "Email Hunter Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1C759F62AA1BCE500A7B8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Email Hunter";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chicmic.Email-Hunter";
+				PRODUCT_NAME = "Email Hunter";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B1C759F72AA1BCE500A7B8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Email Hunter";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chicmic.Email-Hunter";
+				PRODUCT_NAME = "Email Hunter";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B1C759F92AA1BCE500A7B8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Email Hunter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Email Hunter Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chicmic.Email-Hunter.Extension";
+				PRODUCT_NAME = "Email Hunter Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B1C759FA2AA1BCE500A7B8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "macOS (Extension)/Email Hunter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Email Hunter Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chicmic.Email-Hunter.Extension";
+				PRODUCT_NAME = "Email Hunter Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		B1C759FD2AA1BCE500A7B8DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Email Hunter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Email Hunter";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chicmic.Email-Hunter";
+				PRODUCT_NAME = "Email Hunter";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		B1C759FE2AA1BCE500A7B8DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Email Hunter.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Email Hunter";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chicmic.Email-Hunter";
+				PRODUCT_NAME = "Email Hunter";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B1C759892AA1BCE200A7B8DB /* Build configuration list for PBXProject "Email Hunter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C759EF2AA1BCE500A7B8DB /* Debug */,
+				B1C759F02AA1BCE500A7B8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C759F12AA1BCE500A7B8DB /* Build configuration list for PBXNativeTarget "Email Hunter Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C759F22AA1BCE500A7B8DB /* Debug */,
+				B1C759F32AA1BCE500A7B8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C759F52AA1BCE500A7B8DB /* Build configuration list for PBXNativeTarget "Email Hunter (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C759F62AA1BCE500A7B8DB /* Debug */,
+				B1C759F72AA1BCE500A7B8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C759F82AA1BCE500A7B8DB /* Build configuration list for PBXNativeTarget "Email Hunter Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C759F92AA1BCE500A7B8DB /* Debug */,
+				B1C759FA2AA1BCE500A7B8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B1C759FC2AA1BCE500A7B8DB /* Build configuration list for PBXNativeTarget "Email Hunter (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B1C759FD2AA1BCE500A7B8DB /* Debug */,
+				B1C759FE2AA1BCE500A7B8DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B1C759862AA1BCE200A7B8DB /* Project object */;
+}
